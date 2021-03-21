@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='icon' href='Logo.ico'>   
+<title>QuickJob</title>
+<link rel="stylesheet" href="styleQuickJobSignUp.css">
+
+</head>
+<body>
+
+<!--<form action="http://localhost:8080/formSubmit" method="POST">-->
+  <div class="Box">  
+    <div class="imgcontainer">
+        <img src="LoginBox.png" alt="Avatar" class="avatar">
+    </div>
+    <center>
+        <h2>SingUp</h2>
+    </center>
+    <div class="container">
+
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname"  id="SignUpName" required>
+        <label for="uname"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="uname"  id="SignUpemail" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="SignUpPassword" required>
+        <span class="SingUp">Don't have account? <a href="http://localhost:8080/QuickJob/MainPage/QuickJobLogIn.html">Log In</a></span>  
+        <span class="psw">Forgot <a href="http://localhost:8080/QuickJob/ForgotPassword/ForgotPassword.html">password?</a></span>    
+        <button type="submit"  onclick="getInputValue()">Sign Up</button>
+    </div>
+
+
+<!--</form>-->
+</div>
+<div class="LogoContainer">
+  <center><img src="Logo.png" alt="Avatar" class="Logo"></center>
+<h2 class="welcome">You have time?<br>We found a job for you!</h2>
+</div>
+<script src="SignUp.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

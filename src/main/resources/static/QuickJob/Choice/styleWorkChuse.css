@@ -1,0 +1,32 @@
+
+    body {
+        font-family: Arial, Helvetica, sans-serif; 
+        
+    }
+
+    .Delar {
+      background-color: #c5e4e6;
+      border: 3px solid lightgray;
+      width: 40%;
+      display: inline-block;
+      opacity: 0.6;
+     height: auto;
+     margin:3%;
+  }
+    .Delar:hover {
+      background-color: #c5e4e6;
+      border: 3px solid lightgray;
+      width: 40%;
+      display: inline-block;
+      height: auto;
+      margin:3%;
+      cursor: pointer;
+      opacity: 1;
+  }
+
+    .Worker{
+
+      text-align: center;
+
+    }
+ 

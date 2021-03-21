@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='icon' href='Logo.ico'>   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>WorkProfile</title>
+<link rel="stylesheet" href="styleWorkerProfike.css">
+</head>
+<body>
+<div class="BacGroundPrf">
+  <img src="content.jpg">
+  <div class="inputDiv">
+              <label for="uname"><b>Title</b></label><br>
+              <input class="Details" type="text" placeholder="Enter Username" id="Title" name="uname" required><br>
+              <label for="uname"><b>How many you pay</b></label><br>
+              <input class="Details" type="text" placeholder="Enter email" id="Paymant" name="email" required><br>
+              <label for="uname"><b>Date</b></label><br>
+              <input class="Details" type="date" placeholder="Enter email" id="Date" name="email" required><br>
+
+              <label for="number"><b>PhoneNumber</b></label><br>
+              <input class="Details" type="number" placeholder="PhoneNumber" id="PhoneNumber" name="number" required><br>
+  </div>
+  
+        <center> <input type="button" value="Find Worker"></center>
+        <center> <input type="button" value="Save" onclick="getInputValue()"></center>
+       <br><br><br>
+        <div class="ContainerRating">
+       <label for="text" id="DescriptionText"><b>Work Description</b></label><br>
+       </div>
+       <textarea id="Description">
+             
+       </textarea>
+
+       <center><h2><b>My Works</b></h2></center>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="Dealar.js"></script>
+</body>
+
+</html>
