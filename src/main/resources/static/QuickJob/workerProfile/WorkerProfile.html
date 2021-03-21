@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='icon' href='Logo.ico'>   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>WorkerProfile</title>
+<link rel="stylesheet" href="styleWorkerProfile.css">
+</head>
+<body>
+
+
+<div class="BacGroundPrf">
+         
+  <img src="avatar2.png">
+  <div class="inputDiv">
+              <label for="uname"><b>Username</b></label><br>
+              <input class="Details" type="text" placeholder="Enter Username" id="Username" name="uname" required><br>
+              <label for="uname"><b>Email</b></label><br>
+              <input class="Details" type="text" placeholder="Enter email" id="email" name="email" required><br>
+
+              <label for="number"><b>PhoneNumber</b></label><br>
+              <input class="Details" type="number" placeholder="PhoneNumber" id="PhoneNumber" name="number" required><br>
+
+                <label for="number"><b>Password</b></label><br>
+              <input class="Details" type="text" placeholder="Password" id="Password" name="number" required><br>
+  </div>
+ <center> <input type="button" value="Find Work" onclick="FindWork()"></center>
+  <center> <input type="button" value="Save"  onclick="getInputValue()"></center>
+  <br><br><br><br><br><br>
+        <div class="ContainerRating">
+              <label><b>Rating</b></label><br>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+  
+       <br>
+       <label for="text"><b>Your Description</b></label><br>
+       </div>
+       <textarea id="Description">
+            
+       </textarea>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="workerProfile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='icon' href='Logo.ico'>   
+<title>QuickJob</title>
+<link rel="stylesheet" href="styleQuickJobLogIn.css">
+</head>
+<body>
+
+
+    <video id="videBack" poster="screenShot.png" autoplay muted loop>
+        <source id="videmp4" src="vide.mp4" type="video/mp4">
+    </video>
+
+ <div class="Box">  
+ 
+    <div class="imgcontainer">
+        <img src="LoginBox.png" alt="Avatar" class="avatar">
+    </div>
+    <center>
+        <h2>Login</h2>
+    </center>
+    <div class="container">
+
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" id="Username" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="Password" required>
+        <span class="SingUp">Dont have account? <a href="http://localhost:8080/QuickJob/SignUp/QuickJobSignUp.html">Sing Up</a></span>  
+        <span class="psw">Forgot <a href="http://localhost:8080/QuickJob/ForgotPassword/ForgotPassword.html">password?</a></span>    
+        <button type="submit" onclick="getInputValue()">Log in</button>
+    </div>
+</div>
+<div class="LogoContainer">
+  <center><img src="Logo.png" alt="Avatar" class="Logo"></center>
+<h2 class="welcome">Welcome Again!</h2>
+</div>
+<script src="MainPage.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

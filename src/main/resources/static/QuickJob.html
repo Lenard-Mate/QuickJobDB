@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+	<h1>This is a Heading</h1>
+	<p>This is a paragraph.</p>
+
+ <!-- <form action="formSubmit" method="POST">-->
+  
+		<label for="fname">First name:</label> <input type="text" id="SignUpName"
+			name="fname" ><br>
+		<br> <label for="lname">Last name:</label> <input type="text"
+			id="SignUpemail" name="lname"><br>
+		<textarea id="SignUpPassword" name="TextBOx"></textarea>
+		<br> <input type="submit" value="Submit" onclick="getInputValue()">
+		
+		<!--</form>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+
+function getInputValue(){
+      
+	var inputValName = document.getElementById("SignUpName").value;
+    var inputValEmail = document.getElementById("SignUpemail").value;
+    var inputValPassword = document.getElementById("SignUpPassword").value;
+    
+       var conversion;
+       conversion={"userName":inputValName,"email":inputValEmail,"password":inputValPassword }
+
+       var ConversionStringify=JSON.stringify(conversion);
+       console.log(ConversionStringify);
+/*
+const xhr=new XMLHttpRequest();
+xhr.open("POST","http://localhost:8080/formSubmit");
+xhr. setRequestHeader("Content-Type","application/json");
+xhr.send(ConversionStringify);
+
+
+$.ajax({
+  type:"POST",
+  url: "http://localhost:8080/formSubmit",  
+  headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+  },
+  data: {UserName:inputValName,email: inputValEmail, password: inputValPassword},
+}).done(function(data){
+  alert(data)
+})
+*/
+
+
+
+       $.ajax({ 
+           url:"http://localhost:8080/formSubmit",
+           type:"POST", 
+           contentType: "application/json; charset=utf-8",
+           data: ConversionStringify, //Stringified Json Object
+           async: false,    //Cross-domain requests and dataType: "jsonp" requests do not support synchronous operation
+           cache: false,    //This will force requested pages not to be cached by the browser  
+            processData:false, //To avoid making query String instead of JSON
+            success: function(resposeJsonObject){
+              console.log("Its Work");
+           }
+       });
+      }
+    
+
+</script>
+</body>
+</html>
